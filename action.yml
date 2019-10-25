@@ -1,0 +1,14 @@
+name: gofmt
+author: pull.bot
+description: go fmt
+inputs:
+  name:
+    description: Check name in GitHub UI
+    required: false
+    default: go fmt
+runs:
+  using: docker
+  image: docker://pulldotbot/checks:gofmt
+branding:
+  icon: git-pull-request
+  color: blue
