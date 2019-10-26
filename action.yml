@@ -1,14 +1,14 @@
-name: gofmt
+name: golangci
 author: pull.bot
-description: go fmt
+description: golangci
 inputs:
   name:
     description: Check name in GitHub UI
     required: false
-    default: go fmt
+    default: golangci
 runs:
   using: docker
-  image: docker://pulldotbot/checks:gofmt
+  image: docker://pulldotbot/checks:golangci
 branding:
   icon: git-pull-request
   color: blue
